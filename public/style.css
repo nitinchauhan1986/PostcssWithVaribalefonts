@@ -3,6 +3,7 @@
   --text-color: #fff;
   --defaultFont: arial;
   --text-axis: 600;
+  --text-color: #e34f15;
 }
 /* @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;600&display=swap"); */
 @font-face {
@@ -77,7 +78,10 @@ header {
   background: var(--bg-color);
   height: 100px;
   width: 100%;
-  color: var(--text-color)
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 header ul {
     display: flex
@@ -88,14 +92,25 @@ header ul li {
       margin-right: 10px;
       list-style: none;
       text-align: center;
-      padding: 6px
+      padding: 6px;
+      white-space: nowrap;
+      border-radius: 5px
     }
 header ul li a {
-        color: red;
+        color: #686161;
 
         text-decoration: none;
         font: bold 12px/16px var(--defaultFont);
       }
+.heading {
+  font-family: "Rokkitt";
+  text-align: center;
+  font-size: 28px;
+  padding: 10px 0 0 0;
+  font-variation-settings: "wght" 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
 ::-moz-placeholder {
   display: flex;
 }
