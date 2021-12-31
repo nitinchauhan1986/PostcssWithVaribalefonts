@@ -1,0 +1,73 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;600&display=swap"); */
+
+@font-face {
+  font-family: "Rokkitt";
+  src: url("./fonts/Rokkitt-VariableFont_wght.woff2")
+      format("woff2 supports variations"),
+    url("./fonts/Rokkitt-VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-stretch: 70% 150%;
+}
+
+@font-face {
+  font-family: "NotoMalayalam";
+  src: url("./fonts/NotoSansMalayalam.woff2")
+      format("woff2 supports variations"),
+    url("./fonts/NotoSansMalayalam.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+@font-face {
+  font-family: "NotoBengali";
+  src: url("./fonts/NotoSerifBengali-VariableFont_wdth,wght.woff2")
+      format("woff2"),
+    url("./fonts/NotoSerifBengali-VariableFont_wdth,wght.woff2")
+      format("woff2-variations");
+  font-weight: 125 950;
+  font-display: swap;
+  font-stretch: 25% 151%;
+}
+/* https://s3.ap-south-1.amazonaws.com/static.asianetnews.com/v1/fonts/NotoSerifBengali-VariableFont_wdth%2Cwght.woff2 */
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("./fonts/WorkSans.woff2") format("woff2"),
+    url("./fonts/WorkSan.woff2") format("woff2-variations");
+  font-weight: 125 950;
+  font-display: swap;
+  font-stretch: 25% 151%;
+}
+
+.body p {
+  font-size: 18px;
+
+  &:nth-child(1) {
+    font-size: 30px;
+    font-family: "WorkSans";
+    font-variation-settings: "wght" var(--text-axis);
+    line-height: 50px;
+  }
+  &:nth-child(2) {
+    font-size: 30px;
+    font-family: "Rokkitt";
+    font-variation-settings: "wght" var(--text-axis);
+    line-height: 50px;
+  }
+  &:nth-child(3) {
+    font-family: "NotoMalayalam";
+    font-size: 40px;
+    font-variation-settings: "wght" var(--text-axis);
+  }
+  &:nth-child(4) {
+    font-size: 30px;
+    line-height: 50px;
+    font-family: "NotoBengali";
+    font-variation-settings: "wght" var(--text-axis);
+  }
+}
+
+/* html {
+  font-family: Rokkitt;
+  font-variation-settings: "wght" 600;
+} */

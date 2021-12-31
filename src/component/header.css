@@ -1,0 +1,28 @@
+header {
+  background: var(--bg-color);
+  height: 100px;
+  width: 100%;
+  color: var(--text-color);
+
+  & ul {
+    display: flex;
+
+    & li {
+      flex: 1;
+      background: white;
+      margin-right: 10px;
+      list-style: none;
+      text-align: center;
+      padding: 6px;
+      & a {
+        color: red;
+
+        text-decoration: none;
+        font: bold 12px/16px var(--defaultFont);
+      }
+    }
+  }
+}
+::placeholder {
+  display: flex;
+}

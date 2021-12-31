@@ -1,0 +1,27 @@
+{
+  "name": "Post-Css-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postcss:watch": "postcss src/style.css --dir public --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "css-loader": "^6.5.1",
+    "cssnano": "^5.0.13",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.0.2",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "webpack": "^5.65.0"
+  }
+}
