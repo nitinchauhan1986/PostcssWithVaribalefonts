@@ -37,6 +37,7 @@ header {
   color: var(--text-color);
   text-transform: uppercase;
 }
+
 ::placeholder {
   display: flex;
 }

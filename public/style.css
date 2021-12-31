@@ -60,12 +60,14 @@
     font-family: "NotoMalayalam";
     font-size: 40px;
     font-variation-settings: "wght" var(--text-axis);
+    font-stretch: 80%;
   }
 .body p:nth-child(4) {
     font-size: 30px;
     line-height: 50px;
     font-family: "NotoBengali";
     font-variation-settings: "wght" var(--text-axis);
+    font-stretch: 50%;
   }
 /* html {
   font-family: Rokkitt;
