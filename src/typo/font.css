@@ -39,36 +39,43 @@
   font-stretch: 25% 151%;
 }
 
-.body p {
-  font-size: 18px;
+.body {
+  width: min(90%, 1160px);
+  border: 1px solid #ccc;
+  margin-inline: auto;
 
-  &:nth-child(1) {
-    font-size: 30px;
-    font-family: "WorkSans";
-    font-variation-settings: "wght" var(--text-axis);
-    line-height: 50px;
-  }
-  &:nth-child(2) {
-    font-size: 30px;
-    font-family: "Rokkitt";
-    font-variation-settings: "wght" var(--text-axis);
-    line-height: 50px;
-  }
-  &:nth-child(3) {
-    font-family: "NotoMalayalam";
-    font-size: 40px;
-    font-variation-settings: "wght" var(--text-axis);
-    font-stretch: 80%;
-  }
-  &:nth-child(4) {
-    font-size: 30px;
-    line-height: 50px;
-    font-family: "NotoBengali";
-    font-variation-settings: "wght" var(--text-axis);
-    font-stretch: 50%;
+  & p {
+    font-size: var(--step-0);
+    margin: 0px;
+    padding: min(20px, 80px);
+
+    &:nth-child(1) {
+      /* font-size: clamp(18px, 10vw + 1px, 24px); */
+      font-family: "WorkSans";
+      font-variation-settings: "wght" var(--text-axis);
+      line-height: 50px;
+    }
+    &:nth-child(2) {
+      /* font-size: 30px; */
+      font-family: "Rokkitt";
+      font-variation-settings: "wght" var(--text-axis);
+      line-height: 50px;
+    }
+    &:nth-child(3) {
+      font-family: "NotoMalayalam";
+      /* font-size: 40px; */
+      font-variation-settings: "wght" var(--text-axis);
+      font-stretch: 80%;
+    }
+    &:nth-child(4) {
+      /* font-size: 30px; */
+      line-height: 50px;
+      font-family: "NotoBengali";
+      font-variation-settings: "wght" var(--text-axis);
+      font-stretch: 50%;
+    }
   }
 }
-
 /* html {
   font-family: Rokkitt;
   font-variation-settings: "wght" 600;

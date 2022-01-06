@@ -5,3 +5,14 @@
   --text-axis: 600;
   --text-color: #e34f15;
 }
+
+:root {
+  --step--2: clamp(0.89rem, 0.97rem + -0.42vw, 0.68rem);
+  --step--1: clamp(1rem, 0.95rem + 0.24vw, 1.13rem);
+  --step-0: clamp(1.13rem, 0.83rem + 1.46vw, 1.88rem);
+  --step-1: clamp(1.27rem, 0.54rem + 3.63vw, 3.13rem);
+  --step-2: clamp(1.42rem, -0.05rem + 7.39vw, 5.21rem);
+  --step-3: clamp(1.6rem, -1.16rem + 13.82vw, 8.69rem);
+  --step-4: clamp(1.8rem, -3.15rem + 24.74vw, 14.48rem);
+  --step-5: clamp(2.03rem, -6.6rem + 43.14vw, 24.14rem);
+}

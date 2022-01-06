@@ -5,7 +5,20 @@
   --text-axis: 600;
   --text-color: #e34f15;
 }
+
+:root {
+  --step--2: clamp(0.89rem, 0.97rem + -0.42vw, 0.68rem);
+  --step--1: clamp(1rem, 0.95rem + 0.24vw, 1.13rem);
+  --step-0: clamp(1.13rem, 0.83rem + 1.46vw, 1.88rem);
+  --step-1: clamp(1.27rem, 0.54rem + 3.63vw, 3.13rem);
+  --step-2: clamp(1.42rem, -0.05rem + 7.39vw, 5.21rem);
+  --step-3: clamp(1.6rem, -1.16rem + 13.82vw, 8.69rem);
+  --step-4: clamp(1.8rem, -3.15rem + 24.74vw, 14.48rem);
+  --step-5: clamp(2.03rem, -6.6rem + 43.14vw, 24.14rem);
+}
+
 /* @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;600&display=swap"); */
+
 @font-face {
   font-family: "Rokkitt";
   src: url("./fonts/Rokkitt-VariableFont_wght.woff2")
@@ -14,6 +27,7 @@
   font-weight: 100 1000;
   font-stretch: 70% 150%;
 }
+
 @font-face {
   font-family: "NotoMalayalam";
   src: url("./fonts/NotoSansMalayalam.woff2")
@@ -22,6 +36,7 @@
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
+
 @font-face {
   font-family: "NotoBengali";
   src: url("./fonts/NotoSerifBengali-VariableFont_wdth,wght.woff2")
@@ -32,7 +47,9 @@
   font-display: swap;
   font-stretch: 25% 151%;
 }
+
 /* https://s3.ap-south-1.amazonaws.com/static.asianetnews.com/v1/fonts/NotoSerifBengali-VariableFont_wdth%2Cwght.woff2 */
+
 @font-face {
   font-family: "WorkSans";
   src: url("./fonts/WorkSans.woff2") format("woff2"),
@@ -41,41 +58,57 @@
   font-display: swap;
   font-stretch: 25% 151%;
 }
-.body p {
-  font-size: 18px
+
+.body {
+  width: min(90%, 1160px);
+  border: 1px solid #ccc;
+  margin-inline: auto
 }
+
+.body p {
+    font-size: var(--step-0);
+    margin: 0px;
+    padding: min(20px, 80px)
+  }
+
 .body p:nth-child(1) {
-    font-size: 30px;
-    font-family: "WorkSans";
-    font-variation-settings: "wght" var(--text-axis);
-    line-height: 50px;
-  }
+      /* font-size: clamp(18px, 10vw + 1px, 24px); */
+      font-family: "WorkSans";
+      font-variation-settings: "wght" var(--text-axis);
+      line-height: 50px;
+    }
+
 .body p:nth-child(2) {
-    font-size: 30px;
-    font-family: "Rokkitt";
-    font-variation-settings: "wght" var(--text-axis);
-    line-height: 50px;
-  }
+      /* font-size: 30px; */
+      font-family: "Rokkitt";
+      font-variation-settings: "wght" var(--text-axis);
+      line-height: 50px;
+    }
+
 .body p:nth-child(3) {
-    font-family: "NotoMalayalam";
-    font-size: 40px;
-    font-variation-settings: "wght" var(--text-axis);
-    font-stretch: 80%;
-  }
+      font-family: "NotoMalayalam";
+      /* font-size: 40px; */
+      font-variation-settings: "wght" var(--text-axis);
+      font-stretch: 80%;
+    }
+
 .body p:nth-child(4) {
-    font-size: 30px;
-    line-height: 50px;
-    font-family: "NotoBengali";
-    font-variation-settings: "wght" var(--text-axis);
-    font-stretch: 50%;
-  }
+      /* font-size: 30px; */
+      line-height: 50px;
+      font-family: "NotoBengali";
+      font-variation-settings: "wght" var(--text-axis);
+      font-stretch: 50%;
+    }
+
 /* html {
   font-family: Rokkitt;
   font-variation-settings: "wght" 600;
 } */
+
 body{
     background:#f9f9f9;
 }
+
 header {
   background: var(--bg-color);
   height: 100px;
@@ -85,9 +118,11 @@ header {
   align-items: center;
   justify-content: center
 }
+
 header ul {
     display: flex
   }
+
 header ul li {
       flex: 1;
       background: white;
@@ -98,12 +133,14 @@ header ul li {
       white-space: nowrap;
       border-radius: 5px
     }
+
 header ul li a {
         color: #686161;
 
         text-decoration: none;
         font: bold 12px/16px var(--defaultFont);
       }
+
 .heading {
   font-family: "Rokkitt";
   text-align: center;
@@ -113,12 +150,15 @@ header ul li a {
   color: var(--text-color);
   text-transform: uppercase;
 }
+
 ::-moz-placeholder {
   display: flex;
 }
+
 :-ms-input-placeholder {
   display: flex;
 }
+
 ::placeholder {
   display: flex;
 }
